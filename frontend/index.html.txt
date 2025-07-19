@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Map Places</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+  <h1>🌍 Места на карте</h1>
+  <div id="map"></div>
+
+  <div id="form-container" class="hidden">
+    <input id="place-name" placeholder="Название">
+    <textarea id="place-desc" placeholder="Описание"></textarea>
+    <label>Оценка:
+      <select id="place-rating">
+        <option value="1">★☆☆☆☆</option>
+        <option value="2">★★☆☆☆</option>
+        <option value="3">★★★☆☆</option>
+        <option value="4">★★★★☆</option>
+        <option value="5">★★★★★</option>
+      </select>
+    </label>
+    <button id="save-place">Сохранить</button>
+    <button id="cancel">Отмена</button>
+  </div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
